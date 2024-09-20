@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rat in a Maze</title>
+  <link rel="stylesheet" href="rat-maze.css">
+</head>
+<body>
+
+  <div class="maze-path">
+    <h1>Rat in a Maze</h1>
+    <label for="rows">Rows: 
+      <input type="number" name="rows" id="rows" value="5">
+    </label>
+    <label for="cols">Columns:
+      <input type="number" name="cols" id="cols" value="5">
+    </label>
+    <label for="blocked-nodes">Blocked Nodes: 
+      <input type="number" name="blocked-nodes" id="blocked-nodes" value="5">
+    </label>
+    <div>
+      <button id="create-maze">Create Maze</button>
+      <button id="start-rat">Start Rat</button>
+      <button id="pause-rat" disabled>Pause Rat</button>
+      <button id="restart-rat" disabled>Restart Rat</button>
+      <button id="reset-maze">Reset Maze</button>
+    </div>
+  </div>
+
+  <div id="maze" class="maze"></div>
+  
+  <div class="status">
+    <span id="msg"></span>
+  </div>
+
+  <script src="rat-maze.js"></script>
+</body>
+</html>
